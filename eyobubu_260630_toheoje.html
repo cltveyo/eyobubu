@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/eeeoy/Downloads/toheoje_5days_market_2.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>토허제 5일장 완벽 정리 — eyo.bubu</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #FAFAF8;
+    color: #1a1a1a;
+    min-height: 100vh;
+  }
+
+  .copyright-bar {
+    background: #FFF8E1;
+    border-bottom: 1px solid #E8D9A0;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #8a6d1d;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .hero {
+    background: #fff;
+    padding: 56px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid #ECEAE4;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #B5572A;
+    border: 1px solid #B5572A33;
+    background: #FBEFE8;
+    border-radius: 20px;
+    padding: 5px 14px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero h1 span {
+    color: #B5572A;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    color: #8a8579;
+    line-height: 1.7;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+  }
+
+  .section {
+    margin-top: 44px;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    color: #B5572A;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-size: 17px;
+    font-weight: 900;
+    color: #1a1a1a;
+    letter-spacing: -0.01em;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid #ECEAE4;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    font-size: 13.5px;
+    color: #5c5850;
+    line-height: 1.8;
+  }
+
+  .card-body strong {
+    color: #1a1a1a;
+    font-weight: 700;
+  }
+
+  .highlight {
+    color: #B5572A;
+    font-weight: 700;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #ECEAE4;
+    margin: 44px 0 0;
+  }
+
+  .vs-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .vs-card {
+    background: #fff;
+    border: 1px solid #ECEAE4;
+    border-radius: 14px;
+    padding: 16px 14px;
+  }
+
+  .vs-card.left { border-top: 3px solid #C9A961; }
+  .vs-card.right { border-top: 3px solid #B5572A; }
+
+  .vs-label {
+    font-size: 11px;
+    color: #8a8579;
+    margin-bottom: 6px;
+  }
+
+  .vs-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+
+  .vs-desc {
+    font-size: 12.5px;
+    color: #5c5850;
+    line-height: 1.6;
+  }
+
+  .vs-quote {
+    font-size: 13px;
+    font-weight: 700;
+    color: #B5572A;
+    margin-bottom: 8px;
+  }
+
+  .both-banner {
+    background: #FBEFE8;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+    font-size: 12.5px;
+    color: #5c4128;
+    line-height: 1.6;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 22px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    bottom: 6px;
+    width: 1.5px;
+    background: #ECEAE4;
+  }
+
+  .tl-item {
+    position: relative;
+    padding-bottom: 22px;
+  }
+
+  .tl-item:last-child { padding-bottom: 0; }
+
+  .tl-dot {
+    position: absolute;
+    left: -22px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #C9A961;
+  }
+
+  .tl-item.key .tl-dot {
+    border-color: #B5572A;
+    background: #B5572A;
+  }
+
+  .tl-date {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #B5572A;
+    margin-bottom: 4px;
+  }
+
+  .tl-text {
+    font-size: 13px;
+    color: #3a372f;
+    line-height: 1.6;
+  }
+
+  .tl-sub {
+    font-size: 12px;
+    color: #8a8579;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .reg-group-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #B5572A;
+    margin: 18px 0 8px;
+  }
+
+  .reg-group-title:first-child { margin-top: 0; }
+
+  .reg-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 9px 0;
+    border-bottom: 1px solid #F2F0EA;
+  }
+
+  .reg-item:last-child { border-bottom: none; }
+
+  .reg-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #C9A961;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+
+  .reg-text {
+    font-size: 13px;
+    color: #3a372f;
+    line-height: 1.6;
+  }
+
+  .region-card {
+    background: #fff;
+    border: 1px solid #ECEAE4;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .region-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+  }
+
+  .region-name {
+    font-size: 15px;
+    font-weight: 900;
+    color: #1a1a1a;
+  }
+
+  .region-rank {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #B5572A;
+    background: #FBEFE8;
+    padding: 3px 9px;
+    border-radius: 20px;
+  }
+
+  .region-stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #F2F0EA;
+  }
+
+  .region-stat-row:last-child { border-bottom: none; }
+
+  .region-stat-label {
+    font-size: 12.5px;
+    color: #8a8579;
+  }
+
+  .region-stat-value {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .region-stat-value.up {
+    color: #B5572A;
+  }
+
+  .region-note {
+    font-size: 12px;
+    color: #8a8579;
+    margin-top: 10px;
+    line-height: 1.6;
+    padding-top: 10px;
+    border-top: 1px dashed #ECEAE4;
+  }
+
+  .criterion-box {
+    background: #F7F5EF;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 12px;
+  }
+
+  .criterion-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #8a8579;
+    margin-bottom: 5px;
+  }
+
+  .criterion-text {
+    font-size: 13px;
+    color: #1a1a1a;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .compare-note {
+    background: #FBEFE8;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    color: #5c4128;
+    line-height: 1.6;
+  }
+
+  .compare-table {
+    background: #fff;
+    border: 1px solid #ECEAE4;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .compare-row-head {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    background: #F7F5EF;
+    padding: 10px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8a8579;
+  }
+
+  .compare-row {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    padding: 12px 16px;
+    border-bottom: 1px solid #F2F0EA;
+    align-items: center;
+  }
+
+  .compare-row:last-child { border-bottom: none; }
+
+  .compare-region {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .compare-region-sub {
+    font-size: 11px;
+    color: #8a8579;
+    margin-top: 2px;
+  }
+
+  .compare-value {
+    font-size: 14px;
+    font-weight: 900;
+    color: #B5572A;
+  }
+
+  .flow-card {
+    background: #fff;
+    border: 1px solid #ECEAE4;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-top: 10px;
+  }
+
+  .flow-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+  }
+
+  .flow-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: 12.5px;
+  }
+
+  .flow-region { color: #5c5850; }
+  .flow-stat { font-weight: 700; color: #1a1a1a; }
+
+  .closing-note {
+    font-size: 12px;
+    color: #8a8579;
+    line-height: 1.7;
+    margin-top: 14px;
+    padding: 14px 16px;
+    background: #F7F5EF;
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+
+<div class="copyright-bar">
+  © eyo.bubu 가 직접 만든 자료입니다. 본 자료의 무단 재배포·재공유를 금지합니다. 소중한 자료, 함께 지켜주세요 🙏
+</div>
+
+<div class="hero">
+  <div class="hero-tag">토허제 완벽 정리</div>
+  <h1>토지거래허가 <span>5일장</span><br>동탄 · 기흥 · 구리</h1>
+  <p class="hero-sub">규제지역 7월 1일, 토허구역 7월 5일<br>이 5일 안에 뭐가 어떻게 달라지는지 정리했어요</p>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">01</span>
+      <span class="section-title">규제지역 vs 토허구역, 뭐가 다른가요</span>
+    </div>
+
+    <div class="vs-wrap">
+      <div class="vs-card left">
+        <p class="vs-label">7월 1일부터</p>
+        <p class="vs-name">규제지역</p>
+        <p class="vs-quote">"사는 데 돈이 더 들어요"</p>
+        <p class="vs-desc">조정대상지역 · 투기과열지구<br>대출 · 세금 · 청약 규제</p>
+      </div>
+      <div class="vs-card right">
+        <p class="vs-label">7월 5일부터</p>
+        <p class="vs-name">토허구역</p>
+        <p class="vs-quote">"허락부터 받으세요"</p>
+        <p class="vs-desc">토지거래허가구역<br>거래 자체를 구청 허가제로 통제</p>
+      </div>
+    </div>
+
+    <div class="both-banner">
+      동탄·기흥·구리는 이 둘에 <strong>동시에</strong> 묶였어요.<br>효력 발생 시점만 5일 차이가 나는 거예요.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">02</span>
+      <span class="section-title">토허제, 어떻게 흘러왔나</span>
+    </div>
+
+    <div class="card">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <p class="tl-date">2020.06</p>
+          <p class="tl-text">강남 삼성·청담·대치동, 송파 잠실동 첫 지정</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <p class="tl-date">2021</p>
+          <p class="tl-text">압구정, 목동, 여의도, 성수 일부로 확대</p>
+        </div>
+        <div class="tl-item key">
+          <div class="tl-dot"></div>
+          <p class="tl-date">2025.02</p>
+          <p class="tl-text">서울시, 잠실·삼성·대치·청담 해제</p>
+          <p class="tl-sub">→ 한 달 만에 강남3구 집값 7년 만의 최대 폭 상승</p>
+        </div>
+        <div class="tl-item key">
+          <div class="tl-dot"></div>
+          <p class="tl-date">2025.03</p>
+          <p class="tl-text">해제 한 달 만에 강남3구 + 용산 재지정</p>
+          <p class="tl-sub">→ 송파 매물 17.6%, 서초 13.6% 급감</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <p class="tl-date">2025.10</p>
+          <p class="tl-text">10·15 대책 — 서울 전역 + 경기 12곳 확대</p>
+          <p class="tl-sub">과천 · 광명 · 성남 분당·수정·중원 · 수원 영통·장안·팔달 · 안양 동안 · 용인 수지 · 의왕 · 하남</p>
+        </div>
+        <div class="tl-item key">
+          <div class="tl-dot"></div>
+          <p class="tl-date">2026.06.30</p>
+          <p class="tl-text">동탄 · 기흥 · 구리 신규 지정</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">03</span>
+      <span class="section-title">핵심 규제, 한눈에 정리</span>
+    </div>
+
+    <div class="card">
+      <p class="reg-group-title">대출</p>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">LTV 70% → 40% <strong>(생애최초는 70% 유지)</strong></p>
+      </div>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">한도 — 15억 이하 6억 / 15억~25억 4억 / 25억 초과 2억</p>
+      </div>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">유주택자는 <strong>LTV 0%</strong> — 신규 대출 불가</p>
+      </div>
+
+      <p class="reg-group-title">거래</p>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">다주택자 매수 — 실거주 목적 아니면 허가 안 남</p>
+      </div>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">다주택자 매도는 가능 (무주택자가 사면 실거주 의무 유예)</p>
+      </div>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">2년 실거주 의무, 4개월 내 전입신고</p>
+      </div>
+
+      <p class="reg-group-title">기타</p>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">분양권 전매 제한 · 청약 재당첨 제한</p>
+      </div>
+      <div class="reg-item">
+        <div class="reg-dot"></div>
+        <p class="reg-text">다주택자 취득세 · 양도소득세 중과</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">04</span>
+      <span class="section-title">동탄·기흥·구리 매매 시장 분석</span>
+    </div>
+
+    <div class="region-card">
+      <div class="region-head">
+        <span class="region-name">화성 동탄구</span>
+        <span class="region-rank">전국 1위</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">올해 누적 상승률</span>
+        <span class="region-stat-value up">11.38%</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">월간 상승률 흐름</span>
+        <span class="region-stat-value">2월 0.78% → 5월 1.57%</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">6월 넷째 주 (주간)</span>
+        <span class="region-stat-value up">1.65%</span>
+      </div>
+      <p class="region-note">경기도 평균 주간 상승률(0.19%)을 크게 웃돌았어요. 반도체 호황 + GTX-A 개통 기대감이 배경이에요.</p>
+    </div>
+
+    <div class="region-card">
+      <div class="region-head">
+        <span class="region-name">용인 기흥구</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">올해 누적 상승률</span>
+        <span class="region-stat-value up">6.21%</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">월간 상승률 흐름</span>
+        <span class="region-stat-value">2월 1.08% → 5월 0.95%</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">6월 넷째 주 (주간)</span>
+        <span class="region-stat-value up">0.21%</span>
+      </div>
+      <p class="region-note">2월 1%대 상승 이후에도 매달 0.7~0.9%대 오름세를 유지했어요. 반도체 클러스터 조성 기대감이 주요 배경이에요.</p>
+    </div>
+
+    <div class="region-card">
+      <div class="region-head">
+        <span class="region-name">구리시</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">올해 누적 상승률</span>
+        <span class="region-stat-value up">7.87%</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">월간 상승률 흐름</span>
+        <span class="region-stat-value">2월 1.77% → 5월 1.15%</span>
+      </div>
+      <div class="region-stat-row">
+        <span class="region-stat-label">6월 넷째 주 (주간)</span>
+        <span class="region-stat-value up">0.33%</span>
+      </div>
+      <p class="region-note">2월 급등 이후에도 5월까지 1%대 상승률을 이어가며 단기 과열이 쉽게 꺾이지 않았어요. 서울 인접 역세권 입지. 작년 10·15 대책 때는 규제지역에서 제외돼 풍선효과를 누린 지역이에요.</p>
+    </div>
+
+    <div class="criterion-box">
+      <p class="criterion-label">국토부 규제지역 지정 요건</p>
+      <p class="criterion-text">"최근 3개월 물가상승률보다 집값 상승률이 1.3배 초과"<br>세 지역 모두 이 요건을 충족해 지정됐어요.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">05</span>
+      <span class="section-title">작년 10·15 지정 당시는 어땠나</span>
+    </div>
+
+    <div class="compare-note">
+      비교 기준이 달라요. 모두 <strong>'지정 당시 직전 1주 상승률'</strong> 기준이에요. 10·15 대책 때 규제지역으로 묶인 곳들이 지정 당시 어느 정도로 과열돼 있었는지 보여드릴게요.
+    </div>
+
+    <div class="compare-table">
+      <div class="compare-row-head">
+        <span>지역</span>
+        <span>지정 당시 상승률</span>
+      </div>
+      <div class="compare-row">
+        <div>
+          <p class="compare-region">성남 분당구</p>
+          <p class="compare-region-sub">2025.10.15 규제지역 지정 · 직전 1주</p>
+        </div>
+        <span class="compare-value">1.78%</span>
+      </div>
+      <div class="compare-row">
+        <div>
+          <p class="compare-region">과천시</p>
+          <p class="compare-region-sub">2025.10.15 규제지역 지정 · 직전 1주</p>
+        </div>
+        <span class="compare-value">1.48%</span>
+      </div>
+      <div class="compare-row">
+        <div>
+          <p class="compare-region">광명시</p>
+          <p class="compare-region-sub">2025.10.15 규제지역 지정 · 직전 1주</p>
+        </div>
+        <span class="compare-value">0.76%</span>
+      </div>
+      <div class="compare-row">
+        <div>
+          <p class="compare-region">용인 수지구</p>
+          <p class="compare-region-sub">2025.10.15 규제지역 지정 · 직전 1주</p>
+        </div>
+        <span class="compare-value">0.41%</span>
+      </div>
+      <div class="compare-row">
+        <div>
+          <p class="compare-region">수원 영통구</p>
+          <p class="compare-region-sub">2025.10.15 규제지역 지정 · 직전 1주</p>
+        </div>
+        <span class="compare-value">0.33%</span>
+      </div>
+    </div>
+
+    <div class="flow-card">
+      <p class="flow-title">참고 — 10·15 규제지역 지정 이후 흐름 (2개월 후)</p>
+      <div class="flow-item">
+        <span class="flow-region">과천 (규제지역)</span>
+        <span class="flow-stat">0.45% (전국 1위 유지)</span>
+      </div>
+      <div class="flow-item">
+        <span class="flow-region">분당 (규제지역)</span>
+        <span class="flow-stat">0.33% → 0.38%</span>
+      </div>
+      <div class="flow-item">
+        <span class="flow-region">안양 동안 (규제지역)</span>
+        <span class="flow-stat">0.28% → 0.42%</span>
+      </div>
+      <div class="flow-item">
+        <span class="flow-region">용인 수지 (규제지역)</span>
+        <span class="flow-stat">0.37% → 0.44%</span>
+      </div>
+    </div>
+
+    <p class="closing-note">규제지역으로 묶인 곳들의 상승세가 지정 이후에도 완전히 꺾이지는 않았다는 걸 보여주는 데이터예요.<br><br>* 직전 1개월 누적 변동률은 한국부동산원 공식 자료로 확인되지 않아 제외했어요. 위 수치는 모두 지정 당일 기준 직전 1주 상승률이에요.</p>
+  </div>
+
+</div>
+
+
+
+</body></html>
