@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/eeeoy/Downloads/eyobubu_freelancer_mortgage.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>프리랜서 주담대 완벽 가이드 — eyo.bubu</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #FAFAF8;
+    --white: #ffffff;
+    --border: #ECEAE4;
+    --border-light: #F2F0EA;
+    --text-primary: #1a1a1a;
+    --text-secondary: #5c5850;
+    --text-muted: #8a8579;
+    --accent: #B5572A;
+    --accent-light: #FBEFE8;
+    --accent-border: #B5572A33;
+    --gold: #C9A961;
+    --surface: #F7F5EF;
+    --green: #2E7D52;
+    --green-light: #EAF4EE;
+    --red: #C0392B;
+    --red-light: #FDECEA;
+    --yellow: #856404;
+    --yellow-light: #FFF3CD;
+    --yellow-border: #FFE083;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .copyright-bar {
+    background: #FFF8E1;
+    border-bottom: 1px solid #E8D9A0;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #8a6d1d;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    line-height: 1.5;
+  }
+
+  .hero {
+    background: var(--white);
+    padding: 48px 24px 36px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    border: 1px solid var(--accent-border);
+    background: var(--accent-light);
+    border-radius: 20px;
+    padding: 4px 14px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+    line-height: 1.35;
+  }
+
+  .hero h1 span { color: var(--accent); }
+
+  .hero-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+  }
+
+  .section { margin-top: 40px; }
+
+  .section-label {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .section-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0 0;
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.75;
+  }
+
+  /* 비교 행 */
+  .compare-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .compare-row:last-child { border-bottom: none; }
+  .compare-label { font-size: 13px; color: var(--text-muted); }
+  .compare-value { font-size: 13.5px; font-weight: 700; color: var(--text-primary); }
+  .compare-value.red { color: var(--red); }
+  .compare-value.green { color: var(--green); }
+  .compare-value.accent { color: var(--accent); }
+
+  /* 포인트 박스 */
+  .point-box {
+    background: var(--accent-light);
+    border: 1px solid var(--accent-border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+  }
+  .point-text {
+    font-size: 13px;
+    color: #5c4128;
+    line-height: 1.65;
+  }
+
+  /* 경고 박스 */
+  .warning-box {
+    background: var(--yellow-light);
+    border: 1px solid var(--yellow-border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+  }
+  .warning-text {
+    font-size: 12.5px;
+    color: var(--yellow);
+    line-height: 1.65;
+  }
+
+  /* 팁 박스 */
+  .tip-box {
+    background: var(--green-light);
+    border: 1px solid #B2DFCA;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+  }
+  .tip-text {
+    font-size: 12.5px;
+    color: #1B5E3B;
+    line-height: 1.65;
+  }
+
+  /* 닷 리스트 */
+  .dot-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .dot-row:last-child { border-bottom: none; }
+  .dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+  .dot-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+  }
+  .dot-text strong { color: var(--text-primary); font-weight: 700; }
+
+  /* 타임라인 */
+  .timeline {
+    position: relative;
+    padding-left: 20px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px; top: 6px; bottom: 6px;
+    width: 1.5px;
+    background: var(--border);
+  }
+  .tl-item {
+    position: relative;
+    padding-bottom: 18px;
+  }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-dot {
+    position: absolute;
+    left: -20px; top: 4px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--gold);
+  }
+  .tl-item.key .tl-dot {
+    border-color: var(--accent);
+    background: var(--accent);
+  }
+  .tl-date {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 3px;
+  }
+  .tl-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  .tl-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 3px;
+    line-height: 1.5;
+  }
+
+  /* 서류 스텝 */
+  .step-list { display: flex; flex-direction: column; gap: 10px; }
+  .step-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 18px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .step-num {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .step-content { flex: 1; }
+  .step-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+  }
+  .step-desc {
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .disclaimer {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+
+<div class="copyright-bar">
+  © eyo.bubu 가 직접 만든 자료입니다. 본 자료의 무단 재배포·재공유를 금지합니다. 소중한 자료, 함께 지켜주세요 🙏
+</div>
+
+<div class="hero">
+  <div class="hero-tag">프리랜서 주담대 가이드</div>
+  <h1>프리랜서 주담대<br><span>회사원이랑 뭐가 다를까?</span></h1>
+  <p class="hero-sub">직접 겪고 정리한 5가지 주의사항<br>+ 종소세 신고 서류 총정리</p>
+</div>
+
+<div class="container">
+
+  <!-- 01. 매출 vs 소득 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">1</div>
+      <span class="section-title">매출 vs 소득 차이</span>
+    </div>
+    <div class="card">
+      <div class="compare-row">
+        <span class="compare-label">매출 (수입금액)</span>
+        <span class="compare-value">벌어들인 돈 전체</span>
+      </div>
+      <div class="compare-row">
+        <span class="compare-label">소득 (소득금액)</span>
+        <span class="compare-value red">매출 - 필요경비</span>
+      </div>
+      <div class="compare-row">
+        <span class="compare-label">대출 한도 기준</span>
+        <span class="compare-value accent">소득 기준으로 DSR 계산</span>
+      </div>
+    </div>
+    <div class="point-box">
+      <p class="point-text">📌 정부24 → 소득금액증명원 발급해보세요<br>매출보다 훨씬 낮게 나오는 경우가 많아요.<br>이 숫자로 대출 한도가 결정돼요!</p>
+    </div>
+    <div class="warning-box">
+      <p class="warning-text">⚠️ 세금 절세를 위해 경비를 많이 잡아뒀다면<br>소득이 낮게 나와서 대출 한도도 낮아질 수 있어요.<br>대출 준비 중이라면 세무사와 미리 상담하세요.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 02. 장래소득 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">2</div>
+      <span class="section-title">장래소득 인정 안 돼요</span>
+    </div>
+    <div class="card">
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text"><strong>회사원</strong> — 연봉 인상 예정, 승진 확정 등 증빙 가능하면 장래소득 반영 가능</p>
+      </div>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text"><strong>프리랜서</strong> — 소득이 불규칙하다고 판단해 장래소득 거의 인정 안 해줘요</p>
+      </div>
+    </div>
+    <div class="point-box">
+      <p class="point-text">📌 지금 내 소득금액증명원에 나온 숫자로만<br>대출 한도를 계산하셔야 해요.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 03. 카드소득 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">3</div>
+      <span class="section-title">카드 소득 인정, 100%는 아니에요</span>
+    </div>
+    <div class="card">
+      <p class="card-body">소득금액증명원으로 증빙이 부족한 경우, 카드 사용액으로 소득을 추정하는 방식이 있어요.<br><br>하지만 <strong>인정 여부와 비율은 금융기관마다, 상담사마다 달라요.</strong> 100% 인정되는 구조가 아니에요.</p>
+    </div>
+    <div class="warning-box">
+      <p class="warning-text">⚠️ 카드 소득 인정을 기대하고 계획 세우기보다<br>여러 은행·상담사에게 직접 확인해보는 게 안전해요.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 04. 종소세 시기 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">4</div>
+      <span class="section-title">종소세 신고 시기별 인정 소득</span>
+    </div>
+    <div class="card">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <p class="tl-date">~5월 종소세 신고 전</p>
+          <p class="tl-text">재작년 소득으로 인정</p>
+          <p class="tl-sub">예) 2026년 5월 전 대출 → 2024년 소득 기준</p>
+        </div>
+        <div class="tl-item key">
+          <div class="tl-dot"></div>
+          <p class="tl-date">5~6월 (신고 후 전산 반영 전)</p>
+          <p class="tl-text">애매한 구간 — 은행마다 다름</p>
+          <p class="tl-sub">이 시기에 대출 신청 시 인정 소득 연도 꼭 확인하세요</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <p class="tl-date">7월 이후 (전산 반영 완료)</p>
+          <p class="tl-text">작년 소득으로 인정</p>
+          <p class="tl-sub">예) 2026년 7월 이후 대출 → 2025년 소득 기준</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:10px">
+      <p class="card-title">📋 5~7월 사이 대출 시 추가 서류</p>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text">소득금액증명원 발행 전이라도 <strong>종합소득세 과세표준확정신고 및 납부계산서</strong>로 진행 가능해요</p>
+      </div>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text"><strong>7월 1일부터</strong>는 출력물로 가능</p>
+      </div>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text">그 이전이라도 <strong>세무사 직인이 있는 소득 신고 자료</strong>로 대체 가능해요</p>
+      </div>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text">진행 방법은 <strong>대출 상담사와 꼭 상담 후 진행</strong>하세요</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <p class="tip-text">💡 저는 6월에 서류 제출해서 작년 소득으로 인정받았어요.<br>같은 시기라도 은행마다 다를 수 있으니 꼭 확인하세요!</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 05. 건보료 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">5</div>
+      <span class="section-title">건보료 폭탄 주의사항</span>
+    </div>
+    <div class="card">
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text"><strong>프리랜서·개인사업자</strong>는 직장 건보료가 아닌 <strong>지역 건보료</strong>를 내요</p>
+      </div>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text">집이 생기는 순간 <strong>재산으로 잡혀서 건보료가 바로 올라요</strong></p>
+      </div>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text">대출 한도를 높이려고 <strong>매출을 높게 잡아도 건보료 인상</strong>으로 이어질 수 있어요</p>
+      </div>
+      <div class="dot-row">
+        <div class="dot"></div>
+        <p class="dot-text">본인 명의 or 공동명의 모두 해당돼요</p>
+      </div>
+    </div>
+    <div class="warning-box">
+      <p class="warning-text">⚠️ 명의 결정 전에 건보료 변동도 함께 계산해보세요.<br>세무사·건강보험공단에 미리 문의하면 예상 금액 확인 가능해요.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    본 자료는 직접 겪은 경험을 바탕으로 정리한 참고용 자료예요.<br>금융기관·세무사마다 기준이 다를 수 있으니 반드시 본인 상황에 맞게 전문가 상담을 받아보세요.
+  </div>
+
+</div>
+
+
+</body></html>
