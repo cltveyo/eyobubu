@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/eeeoy/Downloads/eyobubu_mortgage_docs_1.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회사원 주담대 서류 완벽 가이드 — eyo.bubu</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #FAFAF8;
+    --white: #ffffff;
+    --border: #ECEAE4;
+    --border-light: #F2F0EA;
+    --text-primary: #1a1a1a;
+    --text-secondary: #5c5850;
+    --text-muted: #8a8579;
+    --accent: #B5572A;
+    --accent-light: #FBEFE8;
+    --accent-border: #B5572A33;
+    --gold: #C9A961;
+    --surface: #F7F5EF;
+    --green: #2E7D52;
+    --green-light: #EAF4EE;
+    --red: #C0392B;
+    --yellow: #856404;
+    --yellow-light: #FFF3CD;
+    --yellow-border: #FFE083;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .copyright-bar {
+    background: #FFF8E1;
+    border-bottom: 1px solid #E8D9A0;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #8a6d1d;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    line-height: 1.5;
+  }
+
+  .hero {
+    background: var(--white);
+    padding: 48px 24px 36px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    border: 1px solid var(--accent-border);
+    background: var(--accent-light);
+    border-radius: 20px;
+    padding: 4px 14px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+    line-height: 1.35;
+  }
+
+  .hero h1 span { color: var(--accent); }
+  .hero-sub { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+
+  .container { max-width: 480px; margin: 0 auto; padding: 0 20px 80px; }
+
+  .notice-box {
+    background: var(--yellow-light);
+    border: 1px solid var(--yellow-border);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin: 24px 0 0;
+  }
+  .notice-text { font-size: 12.5px; color: var(--yellow); line-height: 1.65; }
+
+  .section { margin-top: 32px; }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--text-primary);
+  }
+
+  .divider { border: none; border-top: 1px solid var(--border); margin: 32px 0 0; }
+
+  /* 서류 카드 */
+  .doc-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+  }
+
+  .doc-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .doc-num {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .doc-name {
+    font-size: 14.5px;
+    font-weight: 900;
+    color: var(--text-primary);
+    flex: 1;
+  }
+
+  .doc-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+
+  .badge-online {
+    background: var(--green-light);
+    color: var(--green);
+    border: 1px solid #B2DFCA;
+  }
+
+  .badge-visit {
+    background: var(--accent-light);
+    color: var(--accent);
+    border: 1px solid var(--accent-border);
+  }
+
+  .badge-both {
+    background: var(--surface);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+
+  .doc-info-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 12.5px;
+  }
+
+  .doc-info-row:last-child { border-bottom: none; }
+
+  .doc-info-label {
+    color: var(--text-muted);
+    width: 44px;
+    flex-shrink: 0;
+    font-weight: 500;
+  }
+
+  .doc-info-value {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .doc-info-value strong { color: var(--text-primary); font-weight: 700; }
+  .doc-info-value a { color: var(--accent); text-decoration: none; }
+
+  .tip-box {
+    background: var(--green-light);
+    border: 1px solid #B2DFCA;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #1B5E3B;
+    line-height: 1.6;
+  }
+
+  .disclaimer {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: 24px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border-radius: 12px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="copyright-bar">
+  © eyo.bubu 가 직접 만든 자료입니다. 본 자료의 무단 재배포·재공유를 금지합니다. 소중한 자료, 함께 지켜주세요 🙏
+</div>
+
+<div class="hero">
+  <div class="hero-tag">주담대 서류 가이드 · 꾸 편</div>
+  <h1>회사원·프리랜서 공동명의<br><span>주담대 서류 완벽정리 (1)</span></h1>
+  <p class="hero-sub">주채무자 꾸(회사원) 기준 서류 13가지<br>발급처 · 발급 방법까지 한 번에</p>
+</div>
+
+<div class="container">
+
+  <div class="notice-box">
+    <p class="notice-text">⚠️ 은행마다 요구 서류가 다를 수 있어요. 본 자료는 참고용으로만 활용하시고, 반드시 담당 대출 상담사에게 추가 확인해주세요!</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">공통 서류</span>
+      <span class="section-title">신분 · 가족관계 증명</span>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">1</div>
+        <span class="doc-name">인감증명서 2통 + 인감도장</span>
+        <span class="doc-badge badge-visit">방문 필수</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">발급처</span>
+        <span class="doc-info-value"><strong>주민센터(읍·면·동사무소)</strong> 방문 필수</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">준비물</span>
+        <span class="doc-info-value">신분증 + 인감도장</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">인감도장 미등록 시 먼저 인감신고 후 발급. <strong>구청에서는 발급 안 돼요!</strong><br>온라인 발급이 일부 가능하지만 <strong>금융기관 제출용은 온라인 불가</strong> → 주민센터 방문 필수</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">2</div>
+        <span class="doc-name">주민등록등본</span>
+        <span class="doc-badge badge-online">온라인 가능</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">온라인</span>
+        <span class="doc-info-value"><strong>정부24</strong> (gov.kr) → 주민등록등본 → 무료 출력</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방문</span>
+        <span class="doc-info-value">주민센터 (수수료 400원)</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">세대 전체 정보 포함 버전으로 발급</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">3</div>
+        <span class="doc-name">주민등록초본</span>
+        <span class="doc-badge badge-online">온라인 가능</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">온라인</span>
+        <span class="doc-info-value"><strong>정부24</strong> (gov.kr) → 주민등록초본 → 무료 출력</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방문</span>
+        <span class="doc-info-value">주민센터 (수수료 400원)</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value"><strong>과거 주소 및 인적사항 변경 여부 포함</strong> 옵션으로 발급</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">4</div>
+        <span class="doc-name">전입세대열람원</span>
+        <span class="doc-badge badge-visit">방문 필수</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">발급처</span>
+        <span class="doc-info-value"><strong>주민센터(동사무소)</strong> 방문 필수</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">준비물</span>
+        <span class="doc-info-value">매매계약서 + 신분증</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">매수인 본인이 계약서 지참 후 방문해야 발급 가능</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">5</div>
+        <span class="doc-name">가족관계증명서</span>
+        <span class="doc-badge badge-online">온라인 가능</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">온라인</span>
+        <span class="doc-info-value"><strong>대한민국 법원 전자가족관계등록시스템</strong><br>(efamily.scourt.go.kr) → 무료 출력</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방문</span>
+        <span class="doc-info-value">주민센터 또는 법원</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">정부24가 아닌 <strong>별도 사이트</strong>에서 발급해요!</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">6</div>
+        <span class="doc-name">신분증 사본</span>
+        <span class="doc-badge badge-both">직접 준비</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방법</span>
+        <span class="doc-info-value">주민등록증 또는 운전면허증 <strong>앞뒷면 복사</strong></span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">유효기간 내 신분증만 인정</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">회사원 전용</span>
+      <span class="section-title">재직 · 소득 증명</span>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">7</div>
+        <span class="doc-name">원천징수영수증</span>
+        <span class="doc-badge badge-visit">회사 발급</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">발급처</span>
+        <span class="doc-info-value">재직 중인 <strong>회사 인사/경리팀</strong> 요청</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">기간</span>
+        <span class="doc-info-value"><strong>작년 + 재작년</strong> 2개년 모두 필요</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value"><strong>회사 직인</strong> 반드시 포함</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">8</div>
+        <span class="doc-name">재직증명서</span>
+        <span class="doc-badge badge-visit">회사 발급</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">발급처</span>
+        <span class="doc-info-value">재직 중인 <strong>회사 인사팀</strong> 요청</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value"><strong>회사 직인</strong> 반드시 포함. 발급일 기준 최근 3개월 이내</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">9</div>
+        <span class="doc-name">건강보험자격득실확인서</span>
+        <span class="doc-badge badge-online">온라인 가능</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">온라인</span>
+        <span class="doc-info-value"><strong>국민건강보험공단</strong> (nhis.or.kr) → 로그인 → 자격득실확인서 발급</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">앱</span>
+        <span class="doc-info-value">건강보험25시 앱에서도 발급 가능</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방문</span>
+        <span class="doc-info-value">국민건강보험공단 지사</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">
+      <span class="section-eyebrow">부동산 관련</span>
+      <span class="section-title">매매 관련 서류</span>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">10</div>
+        <span class="doc-name">매매계약서 사본</span>
+        <span class="doc-badge badge-both">직접 준비</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방법</span>
+        <span class="doc-info-value">계약 시 수령한 매수 계약서 복사본 준비</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">공인중개사 직인·서명 포함된 원본 기준 사본</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">11</div>
+        <span class="doc-name">등기부등본</span>
+        <span class="doc-badge badge-online">온라인 가능</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">온라인</span>
+        <span class="doc-info-value"><strong>인터넷 등기소</strong> (iros.go.kr) → 열람 또는 발급 (수수료 700~1,000원)</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">발급일 기준 최근 1개월 이내 서류 제출</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">12</div>
+        <span class="doc-name">매수 계약금 거래내역</span>
+        <span class="doc-badge badge-online">온라인 가능</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방법</span>
+        <span class="doc-info-value">본인 거래 은행 앱 또는 인터넷뱅킹 → 거래내역 조회 → 출력</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">계약금 입금 내역이 명확히 확인되는 기간으로 출력</span>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-header">
+        <div class="doc-num">13</div>
+        <span class="doc-name">신고필증 사본</span>
+        <span class="doc-badge badge-both">직접 준비</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">발급처</span>
+        <span class="doc-info-value">부동산 거래 신고 후 <strong>국토교통부 부동산거래관리시스템</strong>에서 출력</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">방법</span>
+        <span class="doc-info-value">rtms.molit.go.kr → 거래신고 완료 후 신고필증 출력</span>
+      </div>
+      <div class="doc-info-row">
+        <span class="doc-info-label">주의</span>
+        <span class="doc-info-value">공인중개사가 대리 신고한 경우 중개사에게 요청</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box" style="margin-top: 24px;">
+    💡 <strong>온라인 발급 꿀팁!</strong><br>
+    정부24 · 법원 전자가족관계등록시스템 · 국민건강보험공단 · 인터넷 등기소 모두 공동인증서 또는 간편인증(카카오·네이버 등)으로 로그인 가능해요. 미리 앱 설치해두면 빠르게 발급할 수 있어요!
+  </div>
+
+  <div class="disclaimer">
+    ⚠️ 본 자료는 직접 경험을 바탕으로 정리한 참고용 자료예요.<br>
+    은행마다 요구 서류와 기준이 다를 수 있으니<br>
+    반드시 담당 대출 상담사에게 추가 확인 후 진행해주세요.
+  </div>
+
+</div>
+
+
+</body></html>
